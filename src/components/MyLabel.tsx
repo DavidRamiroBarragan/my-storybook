@@ -26,9 +26,9 @@ export interface MyLabelProps {
 export const MyLabel = ({
   allCaps,
   color = 'primary',
+  fontColor,
   label = 'no label',
   size = 'normal',
-  fontColor,
 }: MyLabelProps) => {
   const texto = !!allCaps ? label.toLocaleUpperCase() : label;
   return (
